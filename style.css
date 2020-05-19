@@ -1,0 +1,67 @@
+body {
+    background-color: #DFF2F2;
+    font-family: 'Indie Flower', cursive;
+}
+
+header {
+    background-color: #32838C;
+}
+
+h1 {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Pangolin', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+.main-container {
+    margin-top: 30px;
+    background-color: white;
+    border-radius: 8px;
+    padding: 30px 30px;
+}
+
+#itemInput {
+    width: 300px;
+    height: 30px;
+    padding: 5px 5px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+button {
+    background-color: #60BFBF;
+    border-radius: 5px;
+    height: 30px;
+    padding-bottom: 5px;
+    padding-top: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+button:hover {
+    opacity: 80%;
+}
+
+li {
+    margin-top: 10px;
+}
+
+.checkbox {
+    margin-right: 10px;
+}
+
+.checkbox:hover {
+    cursor: pointer;
+}
+
+i {
+    margin-left: 50px;
+}
+
+i:hover {
+    color: #32838C;
+    cursor: pointer;
+}

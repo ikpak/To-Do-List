@@ -17,9 +17,9 @@ let removeItem = (i) => {
 let showList = (list) => {
     let message = list.map((item, i) => {
         if(item.isDone) {
-            return `<li><input type="checkbox" onclick="toggle(${i})" checked />${item.text}<i class="fas fa-trash-alt" onclick='removeItem(${i})'></i></li>`.strike()
+            return `<li><input clas="checkbox" type="checkbox" onclick="toggle(${i})" checked />${item.text}<i class="fas fa-trash-alt" onclick='removeItem(${i})'></i></li>`.strike()
         } else {
-            return `<li><input type="checkbox" onclick="toggle(${i})" />${item.text}<i class="fas fa-trash-alt" onclick='removeItem(${i})'></i></li>`
+            return `<li><input class="checkbox" type="checkbox" onclick="toggle(${i})" />${item.text}<i class="fas fa-trash-alt" onclick='removeItem(${i})'></i></li>`
         } 
     }).join('')
         
