@@ -1,4 +1,5 @@
 let itemList = []
+let previousList = []
 
 let addItem = () => {
     let item = {
@@ -7,11 +8,13 @@ let addItem = () => {
     }
     itemList.push(item)
     showList(itemList)
+    save()
 }
 
 let removeItem = (i) => {
     itemList.splice(i, 1)
     showList(itemList)
+    save()
 }
 
 let showList = (list) => {
@@ -29,4 +32,26 @@ let showList = (list) => {
 let toggle = (i) => {
     itemList[i].isDone = !(itemList[i].isDone)
     showList(itemList)
+    save()
 }
+
+let filterDone = () => {
+    let filteredList = itemList.filter(item => item.isDone == true)
+    showList(filteredList)
+}
+
+let save = () => {
+    localStorage.setItem("todo", JSON.stringify(itemList))
+}
+
+let loadData = () => {
+    previousList = JSON.parse(localStorage.getItem("todo"))
+    if(previousList.length > 0) {
+        itemList = previousList
+        showList(itemList)
+    } else {
+        itemList = []
+    }
+}
+
+loadData()

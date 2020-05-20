@@ -31,9 +31,10 @@ h1 {
     margin-bottom: 30px;
 }
 
-button {
+#add {
     background-color: #60BFBF;
     border-radius: 5px;
+    border-style: none;
     height: 30px;
     padding-bottom: 5px;
     padding-top: 4px;
@@ -47,6 +48,7 @@ button:hover {
 
 li {
     margin-top: 10px;
+    margin-left: -30px;
 }
 
 .checkbox {
@@ -64,4 +66,22 @@ i {
 i:hover {
     color: #32838C;
     cursor: pointer;
+}
+
+#showAll {
+    background-color: #32838C;
+    border-style: none;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 20px;
+    margin-bottom: 10px;
+}
+
+#showDone {
+    background-color: #32838C;
+    border-style: none;
+    color: white;
+    border-radius: 30px;
+    padding: 5px 15px;
+    margin-bottom: 10px;
 }

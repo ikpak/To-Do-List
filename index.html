@@ -37,7 +37,13 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
     </header>
     <div class="container main-container">
         <input type="text" id="itemInput" placeholder="Enter your task here" />
-        <button onclick="addItem()">Add</button>
+        <button id="add" onclick="addItem()">Add</button>
+        
+        <div class="column">
+            <button id="showAll" onclick="showList(itemList)">All</button>
+            <button id="showDone" onclick="filterDone()">Done</button>
+        </div>
+
         <ul id="itemListArea" style="list-style: none;">
         </ul>
         <ul id="doneListArea">
